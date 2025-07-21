@@ -44,11 +44,23 @@ main {
   header h1 {
     font-size: 120px;
   }
+
+  .row {
+    gap: 30px;
+  }
+
+  .carta {
+    width: calc((100% / 2) - (10px * 2));
+  }
 }
 
 /* schermo lg 960px	 */
 @media (min-width: 960px) {
   header h1 {
     font-size: 150px;
+  }
+
+  .carta {
+    width: calc((100% / 3) - (10px * 2));
   }
 }
