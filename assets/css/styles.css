@@ -14,11 +14,11 @@ header {
 header h1 {
   font-family: "Edu TAS Beginner", sans-serif;
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 80px;
 }
 
 /* CARDS */
-#cards-box {
+main {
   background-image: url(../img/cork.png);
   background-size: cover;
   font-family: "Edu TAS Beginner", sans-serif;
@@ -32,7 +32,6 @@ header h1 {
 }
 
 .pin {
-  width: 40px;
   position: absolute;
   top: -5px;
   left: 50%;
@@ -46,9 +45,10 @@ header h1 {
     font-size: 120px;
   }
 }
+
 /* schermo lg 960px	 */
 @media (min-width: 960px) {
   header h1 {
-    font-size: 180px;
+    font-size: 150px;
   }
 }
