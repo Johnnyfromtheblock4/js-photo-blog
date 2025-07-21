@@ -8,6 +8,7 @@
 header {
   position: relative;
   background-image: url("../img/wall.png");
+  background-size: cover;
 }
 
 header h1 {
@@ -19,12 +20,20 @@ header h1 {
 /* CARDS */
 .cards-box {
   background-image: url(../img/cork.png);
+  background-size: cover;
+  font-family: "Edu TAS Beginner", sans-serif;
+  font-size: 20px;
+}
+
+.card {
+  position: relative;
+  border: outset;
 }
 
 .pin {
   width: 40px;
   position: absolute;
-  top: 0;
+  top: -5px;
   left: 50%;
-  transform: translateX(-50%); /* faccio partire da sinistra per centrare */
+  transform: translateX(-50%) translateY(-50%); /* centro verticalmente e orizzontalmente a metà la img */
 }
