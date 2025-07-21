@@ -18,12 +18,6 @@ header h1 {
 }
 
 /* CARDS */
-.container-fluid {
-  width: 100%; /* Default: occupa tutta la larghezza */
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #cards-box {
   background-image: url(../img/cork.png);
   background-size: cover;
