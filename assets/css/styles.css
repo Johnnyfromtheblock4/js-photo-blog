@@ -27,8 +27,8 @@ header h1 {
 
 .carta {
   position: relative;
-  background-color: #fff; 
-  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.3); 
+  background-color: #fff;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
 .pin {
@@ -37,4 +37,18 @@ header h1 {
   top: -5px;
   left: 50%;
   transform: translateX(-50%) translateY(-15%); /* centro verticalmente e orizzontalmente a metà la img */
+}
+
+/* RESPONSIVE */
+/* schermo md 720px	 */
+@media (min-width: 720px) {
+  header h1 {
+    font-size: 120px;
+  }
+}
+/* schermo lg 960px	 */
+@media (min-width: 960px) {
+  header h1 {
+    font-size: 180px;
+  }
 }
