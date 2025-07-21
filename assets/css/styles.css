@@ -24,7 +24,7 @@ header h1 {
   margin-right: auto;
 }
 
-.cards-box {
+#cards-box {
   background-image: url(../img/cork.png);
   background-size: cover;
   font-family: "Edu TAS Beginner", sans-serif;
