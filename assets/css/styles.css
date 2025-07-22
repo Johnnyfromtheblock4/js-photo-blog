@@ -50,7 +50,7 @@ main {
   }
 
   .carta {
-    width: calc((100% / 2) - (10px * 2));
+    width: calc((100% / 2) - 30px);
   }
 }
 
@@ -61,6 +61,6 @@ main {
   }
 
   .carta {
-    width: calc((100% / 3) - (10px * 2));
+    width: calc((100% / 3) - 30px);
   }
 }
