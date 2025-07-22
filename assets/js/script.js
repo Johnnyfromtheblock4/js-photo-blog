@@ -1,3 +1,4 @@
+//RECUPERO CARTE CON LA CHIAMATA AJAX
 //recupero elementi del DOM
 const cardBox = document.getElementById("card-container");
 
@@ -18,9 +19,24 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
         <h2 class="mt-3 mb-3">${card[i].title}</h2>
       </div>`;
   }
+
+  //CAMBIO IMMAGINE AL CLICK
+  //recupero le card per assegnare loro l'evento click
+  const cards = document.querySelectorAll(".carta");
+
+  //ciclo le cards
+  cards.forEach((elem) => {
+    console.log(elem);
+    elem.addEventListener("click", () => {
+      // per recuperare la img
+      const img = elem.querySelector(".img-fluid");
+      // Modifico l'attributo src con un nuovo URL
+      img.src = "assets/img/welcome.png"; // Sostituisci con il nuovo URL desiderato
+    });
+  });
 });
 
-//overlay click
+//OVERLAY CLICK
 document.getElementById("startButton").addEventListener("click", function () {
   //rimuovo l'overlay
   document.getElementById("overlay").classList.add("d-none");
