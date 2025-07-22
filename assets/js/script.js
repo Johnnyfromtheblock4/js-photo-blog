@@ -26,12 +26,13 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
 
   //ciclo le cards
   cards.forEach((elem) => {
-    console.log(elem);
     elem.addEventListener("click", () => {
       // per recuperare la img
-      const img = elem.querySelector(".img-fluid");
-      //modifico l'attributo src con un nuovo URL
-      img.src = "assets/img/welcome.png";
+      const imgOverlay = document.getElementById("overlay");
+
+      //sostituisco la classe 
+      imgOverlay.classList.add("d-block");
+      imgOverlay.classList.remove("d-none");
     });
   });
 });
