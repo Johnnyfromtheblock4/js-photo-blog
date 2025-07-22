@@ -29,6 +29,7 @@ main {
   position: relative;
   background-color: #fff;
   box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
 
 .pin {
@@ -76,12 +77,24 @@ main {
 
 /* stile bottone */
 .start-button {
-  font-size: 50px;
+  font-size: 30px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 /* botton hover */
 .start-button:hover {
-  background-color: red;
+  background-color: gray;
+}
+
+/* EFFETTI HOVER */
+/* effetto hover carta */
+.carta:hover {
+  cursor: pointer;
+  transform: scale(1.1) rotate(10deg);
+  z-index: 1;
+}
+
+.carta:hover .pin {
+  opacity: 0;
 }

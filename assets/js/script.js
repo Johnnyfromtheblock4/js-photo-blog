@@ -37,7 +37,7 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
   });
 
   //METTO FUNZIONE AL BUTTON CHIUDI
-  document.getElementById("startButton").addEventListener("click", function () {
+  document.getElementById("start-button").addEventListener("click", function () {
     //sostituisco classe a overlay
     overlay.classList.add("d-none");
   });
@@ -47,7 +47,7 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
     elem.addEventListener("click", () => {
       const image = elem.querySelector("img");
       //sostituisco in overlay
-      const overlayImage = document.getElementById("imgOverlay");
+      const overlayImage = document.getElementById("img-overlay");
       overlayImage.src = image.src;
     });
   });
