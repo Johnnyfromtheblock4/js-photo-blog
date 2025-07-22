@@ -12,10 +12,11 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
     cardBox.innerHTML += `<div class="carta mt-5 p-4">
         <img src="assets/img/pin.svg" alt="" class="pin" />
         <img src="${card[i].url}" alt="" class="img-fluid" />
-        <h3 class="mt-3 mb-3">${card[i].title}</h3>
         <p class="mt-3 mb-3">
           ${card[i].date}
         </p>
+        <h2 class="mt-3 mb-3">${card[i].title}</h2>
       </div>`;
   }
 });
+
