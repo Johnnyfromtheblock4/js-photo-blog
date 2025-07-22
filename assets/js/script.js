@@ -28,12 +28,18 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
   cards.forEach((elem) => {
     elem.addEventListener("click", () => {
       // per recuperare la img
-      const imgOverlay = document.getElementById("overlay");
+      const overlay = document.getElementById("overlay");
 
       //sostituisco la classe
-      imgOverlay.classList.add("d-block");
-      imgOverlay.classList.remove("d-none");
+      overlay.classList.add("d-block");
+      overlay.classList.remove("d-none");
     });
+  });
+
+  //METTO FUNZIONE AL BUTTON CHIUDI
+  document.getElementById("startButton").addEventListener("click", function () {
+    //sostituisco classe a overlay
+    overlay.classList.add("d-none");
   });
 });
 
