@@ -74,13 +74,6 @@ main {
   z-index: 1000;
 }
 
-/* stile immagine */
-.overlay-content img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-}
-
 /* stile bottone */
 .start-button {
   font-size: 50px;

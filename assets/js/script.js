@@ -20,3 +20,10 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
   }
 });
 
+//overlay click
+document.getElementById("startButton").addEventListener("click", function () {
+  //rimuovo l'overlay
+  document.getElementById("overlay").classList.add("d-none");
+  //mostro il contenuto principale
+  document.querySelector(".blog").classList.remove("d-none");
+});
