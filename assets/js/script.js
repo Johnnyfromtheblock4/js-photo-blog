@@ -11,8 +11,8 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
   //ciclo per i 6 elementi
   for (let i = 0; i < 6; i++) {
     cardBox.innerHTML += `<div class="carta mt-5 p-4">
-        <img src="assets/img/pin.svg" alt="" class="pin" />
         <img src="${card[i].url}" alt="" class="img-fluid" />
+        <img src="assets/img/pin.svg" alt="" class="pin" />
         <p class="mt-3 mb-3">
           ${card[i].date}
         </p>
@@ -40,6 +40,16 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
   document.getElementById("startButton").addEventListener("click", function () {
     //sostituisco classe a overlay
     overlay.classList.add("d-none");
+  });
+
+  //INDIZZO CORRETTO IMMAGINE APERTA
+  cards.forEach((elem) => {
+    elem.addEventListener("click", () => {
+      const image = elem.querySelector("img");
+      //sostituisco in overlay
+      const overlayImage = document.getElementById("imgOverlay");
+      overlayImage.src = image.src;
+    });
   });
 });
 
