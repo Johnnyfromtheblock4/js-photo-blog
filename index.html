@@ -22,20 +22,24 @@
 
   <body>
     <!-- OVERLAY -->
-    <div class="overlay">
-      <img src="assets/img/welcome.png" alt="welcomeImage" />
-      <button id="startButton" class="start-button"></button>
+    <div class="overlay d-flex flex-column justify-content-center align-items-center">
+      <img src="assets/img/welcome.png" alt="welcomeImage" class="m-3"/>
+      <button id="startButton" class="start-button btn btn-primary m-3">
+        Entra
+      </button>
     </div>
-    <!-- HEADER -->
-    <header>
-      <h1 class="text-center m-0 p-3">ESTATE '24</h1>
-    </header>
-    <!-- CARDS BOX -->
-    <main>
-      <div class="container">
-        <div class="row py-5" id="card-container"></div>
-      </div>
-    </main>
+    <div class="blog d-none">
+      <!-- HEADER -->
+      <header>
+        <h1 class="text-center m-0 p-3">ESTATE '24</h1>
+      </header>
+      <!-- CARDS BOX -->
+      <main>
+        <div class="container">
+          <div class="row py-5" id="card-container"></div>
+        </div>
+      </main>
+    </div>
 
     <script src="assets/js/script.js"></script>
   </body>
