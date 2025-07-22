@@ -30,17 +30,17 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
       // per recuperare la img
       const imgOverlay = document.getElementById("overlay");
 
-      //sostituisco la classe 
+      //sostituisco la classe
       imgOverlay.classList.add("d-block");
       imgOverlay.classList.remove("d-none");
     });
   });
 });
 
-//OVERLAY CLICK
-document.getElementById("startButton").addEventListener("click", function () {
-  //rimuovo l'overlay
-  document.getElementById("overlay").classList.add("d-none");
-  //mostro il contenuto principale
-  document.querySelector(".blog").classList.remove("d-none");
-});
+// //OVERLAY CLICK
+// document.getElementById("startButton").addEventListener("click", function () {
+//   //rimuovo l'overlay
+//   document.getElementById("overlay").classList.add("d-none");
+//   //mostro il contenuto principale
+//   document.querySelector(".blog").classList.remove("d-none");
+// });
