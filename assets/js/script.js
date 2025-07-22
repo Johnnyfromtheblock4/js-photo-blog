@@ -30,8 +30,8 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
     elem.addEventListener("click", () => {
       // per recuperare la img
       const img = elem.querySelector(".img-fluid");
-      // Modifico l'attributo src con un nuovo URL
-      img.src = "assets/img/welcome.png"; // Sostituisci con il nuovo URL desiderato
+      //modifico l'attributo src con un nuovo URL
+      img.src = "assets/img/welcome.png";
     });
   });
 });
